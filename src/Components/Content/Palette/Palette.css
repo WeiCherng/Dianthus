@@ -12,7 +12,7 @@
     opacity: 0;
 
     animation: palette-title 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards !important;
 }
 .palette-desc {
     font-size: 16px;
