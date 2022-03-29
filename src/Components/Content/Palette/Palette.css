@@ -1,0 +1,152 @@
+.palette-cont {
+    margin: 0 46px;
+    margin-top: 15vh;
+}
+.palette-exit {
+    animation: type-exit 1.5s;
+    animation-fill-mode: forwards;
+}
+.palette-title {
+    font-weight: 400;
+    font-size: 24px;
+    opacity: 0;
+
+    animation: palette-title 1s;
+    animation-fill-mode: forwards;
+}
+.palette-desc {
+    font-size: 16px;
+    opacity: 0;
+
+    animation: palette-title 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.palette-desc-two {
+    font-size: 16px;
+    opacity: 0;
+
+    animation: palette-title 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.palette-select {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 14px;
+
+    transition: 0.3s;
+}
+.palette-img-cont {
+    height: 60px;
+    display: flex;
+}
+.palette-select:hover {
+    transform: scale(1.1);
+}
+.season {
+    font-weight: 400;
+    margin-top: 42px;
+}
+.seasons {
+    display: flex;
+}
+.spring {
+    margin-right: 24px;
+    opacity: 0;
+
+    animation: season 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+.summer {
+    margin-right: 24px;
+    opacity: 0;
+
+    animation: season 1s;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+}
+.autumn {
+    margin-right: 24px;
+    opacity: 0;
+
+    animation: season 1s;
+    animation-delay: 1.9s;
+    animation-fill-mode: forwards;
+}
+.winter {
+    margin-right: 24px;
+    opacity: 0;
+
+    animation: season 1s;
+    animation-delay: 2.1s;
+    animation-fill-mode: forwards;
+}
+.palette-button {
+    border: none;
+    color: #FFFFFF;
+    background-color: #1a1a1a;
+    padding: 12px 0;
+    width: 140px;
+    margin-top: 32px;
+    margin-left: 32px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+
+    animation: type-title 1s;
+    animation-delay: 2.7s;
+    animation-fill-mode: forwards;
+}
+.palette-back-button {
+    border: 2px solid #1a1a1a;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 12px 0;
+    width: 140px;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+
+    animation: type-title 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.palette-button:hover {
+    background-color: #000000;
+}
+.palette-back-button:hover {
+    background-color: #EEEEEE;
+}
+
+@keyframes palette-exit {
+    from {
+        transform: translateY(0);
+    } 
+    to {
+        transform: translateY(-1000px);
+    }
+}
+@keyframes palette-title {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes season {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

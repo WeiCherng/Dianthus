@@ -1,0 +1,111 @@
+.form-cont {
+  margin: 0 46px;
+  margin-top: 15vh;
+}
+.form-exit {
+  animation: type-exit 1.5s;
+  animation-fill-mode: forwards;
+}
+.form-title {
+  font-weight: 400;
+  font-size: 24px;
+  opacity: 0;
+
+  animation: form-title 1s;
+  animation-fill-mode: forwards;
+}
+.form-desc {
+  font-size: 16px;
+  opacity: 0;
+
+  animation: price-title 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.form-reason {
+  font-size: 14px;
+  opacity: 0;
+
+  animation: price-title 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.form-story {
+  border: 0.5px solid #1a1a1a;
+  width: 600px;
+  height: 100px;
+  padding: 12px 24px;
+  margin-top: 24px;
+  opacity: 0;
+
+  animation: price-title 1s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+.form-msg {
+  margin-top: 24px;
+  opacity: 0;
+
+  animation: price-title 1s;
+  animation-delay: 1.4s;
+  animation-fill-mode: forwards;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  font-size: 14px;
+  opacity: 0;
+
+  animation: price-title 1s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+.input-reason {
+  border: 0.5px solid #1a1a1a;
+  margin-left: 18px;
+  width: 426px;
+  padding: 12px;
+  height: 40px;
+}
+.input-msg {
+  border: 0.5px solid #1a1a1a;
+  margin-top: 12px;
+  width: 600px;
+  height: 100px;
+  padding: 12px 24px;
+}
+.checkbox {
+  margin-right: 12px;
+}
+.input-reason:focus {
+  outline: none;
+  box-shadow: 0 0 5px greenyellow;
+}
+.input-msg:focus {
+  outline: none;
+  box-shadow: 0 0 5px greenyellow;
+}
+.form-story:focus {
+  outline: none;
+  box-shadow: 0 0 5px greenyellow;
+}
+
+@keyframes form-exit {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
+@keyframes form-title {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

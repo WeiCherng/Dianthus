@@ -1,0 +1,94 @@
+.price-cont {
+    margin: 0 46px;
+    margin-top: 15vh;
+}
+.price-exit {
+    animation: type-exit 1.5s;
+    animation-fill-mode: forwards;
+}
+.price-title {
+    font-weight: 400;
+    font-size: 24px;
+    opacity: 0;
+
+    animation: price-title 1s;
+    animation-fill-mode: forwards;
+}
+.prices {
+    font-family: sans-serif;
+    margin-bottom: 16px;
+}
+.price-item-one {
+    opacity: 0;
+
+    animation: prices 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.price-item-two {
+    opacity: 0;
+
+    animation: prices 1s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+.price-item-three {
+    opacity: 0;
+
+    animation: prices 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+.price-item-four {
+    opacity: 0;
+
+    animation: prices 1s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}
+.price-item-five {
+    opacity: 0;
+
+    animation: prices 1s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+}
+.price-desc {
+    margin-top: 28px;
+    line-height: 24px;
+    color: #1a1a1a;
+    opacity: 0;
+
+    animation: price-title 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes price-exit {
+    from {
+        transform: translateY(0);
+    } 
+    to {
+        transform: translateY(-1000px);
+    }
+}
+@keyframes price-title {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes prices {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

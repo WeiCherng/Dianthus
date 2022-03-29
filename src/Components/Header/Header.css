@@ -1,0 +1,127 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 46px;
+    z-index: 10;
+}
+.header-logo {
+    float: left;
+}
+.icons {
+    float: right;
+    display: flex;
+}
+.icons-img-cont {
+    display: flex;
+    height: 26px;
+    opacity: 0;
+
+    animation: header 0.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.cart {
+    object-fit: cover;
+}
+.line-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 28px;
+    opacity: 0;
+
+    animation: header 0.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.line {
+    margin: 2px 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: #FFFFFF;
+    border-radius: 0.5px;
+}
+
+.black {
+    color: #000000 !important;
+}
+.blackfill {
+    background-color: #000000 !important;
+}
+
+.line-break {
+    height: 0.5px;
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+.header-fill {
+    height: 0.5px;
+    background-color: #FFFFFF;
+    opacity: 0;
+    
+    animation: header-fill-width 0.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.header-name {
+    margin: 0;
+    opacity: 0;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: normal;
+    color: #FFFFFF;
+
+    animation: header 0.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.header-desc {
+    font-family: sans-serif;
+    margin-top: 12px;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: 0;
+    color: #FFFFFF;
+
+    animation: header 0.5s;
+    animation-delay: 2.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header-fill-width {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+    
+}
+@keyframes header {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes turn-black {
+    from{
+        color: #FFFFFF;
+    }
+    to {
+        color: #000000;
+    }
+}

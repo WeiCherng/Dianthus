@@ -1,0 +1,65 @@
+.type-cont {
+    margin: 0 46px;
+    margin-top: 15vh;
+}
+.type-row {
+    display: flex;
+    justify-content: space-between;
+}
+.type-exit {
+    animation: type-exit 1.5s;
+    animation-fill-mode: forwards;
+}
+.type-title {
+    font-weight: 400;
+    opacity: 0;
+    animation: type-title 1s;
+    animation-fill-mode: forwards;
+}
+.type-button {
+    border: none;
+    color: #FFFFFF;
+    background-color: #1a1a1a;
+    padding: 12px 0;
+    width: 140px;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+
+    animation: type-title 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.type-button:hover {
+    background-color: #000000;
+}
+
+@keyframes type-exit {
+    from {
+        transform: translateY(0);
+    } 
+    to {
+        transform: translateY(-1000px);
+    }
+}
+@keyframes type-title {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes type-button {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

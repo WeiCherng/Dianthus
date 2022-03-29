@@ -1,0 +1,142 @@
+.landing-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.green-pane {
+  background-color: #b0bca4;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: 3;
+
+  animation: green-pane 1.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.img-cont {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+.main-pic {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  z-index: 2;
+  opacity: 0;
+  filter: brightness(0.5);
+
+  animation: main-pic 1s ease-in-out;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.landing-content {
+  z-index: 3;
+  position: absolute;
+}
+.landing-title {
+  color: #FFFFFF;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: words 1s ease-in-out;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.landing-desc {
+  margin: 0;
+
+  color: #FFFFFF;
+  opacity: 0;
+  animation: words 1s ease-in-out;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+.landing-button {
+  z-index: 3;
+  position: relative;
+  top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  background-color: #1a1a1a;
+  border: none;
+  width: 200px;
+  margin-top: 24px;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
+
+  animation: words 1s ease-in-out;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+}
+.landing-button:hover {
+  background-color: #000000;
+}
+
+.landing-exit {
+    animation: landing-exit 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes green-pane {
+  from {
+    opacity: 0;
+  }
+  20%{
+      opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+}
+@keyframes main-pic {
+  from {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes words {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes landing-exit {
+    from {
+        transform: translateY(0);
+    } 
+    to {
+        transform: translateY(-1000px);
+    }
+}
