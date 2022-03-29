@@ -27,7 +27,7 @@
     font-size: 24px;
     opacity: 0;
 
-    animation: summary-title 1s;
+    animation: price-title 1s;
     animation-fill-mode: forwards;
 }
 .summary-content {
