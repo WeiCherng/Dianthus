@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Dianthus/static/css/main.6cd9b9c9.css",
+    "main.js": "/Dianthus/static/js/main.20f6f80a.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Dianthus/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/Dianthus/index.html",
+    "main.6cd9b9c9.css.map": "/Dianthus/static/css/main.6cd9b9c9.css.map",
+    "main.20f6f80a.js.map": "/Dianthus/static/js/main.20f6f80a.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Dianthus/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cd9b9c9.css",
+    "static/js/main.20f6f80a.js"
+  ]
+}
